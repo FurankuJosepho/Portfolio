@@ -257,7 +257,7 @@ const Home = () => {
       </div>
       <div className="Picture">
         <div className="Circle">
-          <img src="../img/Profile.jpg" alt="Profile" />
+          <img src="https://github.com/FurankuJosepho/Portfolio/raw/main/img/Profile.jpg" alt="Profile" />
         </div>
       </div>
     </section>
