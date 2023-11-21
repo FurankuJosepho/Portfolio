@@ -32,7 +32,13 @@ section {
     overflow: hidden;
   }
   @include breakpoint(sm) {
-    flex-direction: column-reverse;
+    height: 19.5rem;
+    padding: 12px 0;
+    overflow: hidden;
+  }
+  @include breakpoint(msm) {
+    height: 20.5rem;
+    padding: 12px 0;
     overflow: hidden;
   }
 
@@ -61,6 +67,12 @@ section {
       margin-left: 5rem;
     }
     @include breakpoint(sm) {
+      width: 225px;
+      margin-left: 5rem;
+    }
+    @include breakpoint(msm) {
+      width: 225px;
+      margin-left: 5rem;
     }
 
     //User Name
@@ -84,7 +96,12 @@ section {
         text-align: center;
       }
       @include breakpoint(sm) {
-        flex-direction: column-reverse;
+        font-size: 30px;
+        text-align: center;
+      }
+      @include breakpoint(msm) {
+        font-size: 30px;
+        text-align: center;
       }
     }
 
@@ -108,7 +125,10 @@ section {
         font-size: 20px;
       }
       @include breakpoint(sm) {
-        flex-direction: column-reverse;
+        font-size: 20px;
+      }
+      @include breakpoint(msm) {
+        font-size: 20px;
       }
     }
 
@@ -130,6 +150,10 @@ section {
         margin: 1px 0;
       }
       @include breakpoint(sm) {
+        margin: 1px 0;
+      }
+      @include breakpoint(msm) {
+        margin: 1px 0;
       }
 
       .Circle {
@@ -152,6 +176,12 @@ section {
           margin: 0 5px;
         }
         @include breakpoint(sm) {
+          padding: 5px;
+          margin: 0 5px;
+        }
+        @include breakpoint(msm) {
+          padding: 5px;
+          margin: 0 5px;
         }
 
         svg {
@@ -169,6 +199,12 @@ section {
             height: 30px;
           }
           @include breakpoint(sm) {
+            width: 30px;
+            height: 30px;
+          }
+          @include breakpoint(msm) {
+            width: 30px;
+            height: 30px;
           }
         }
 
@@ -186,6 +222,10 @@ section {
             margin: 0.9px 1px;
           }
           @include breakpoint(sm) {
+            margin: 0.9px 1px;
+          }
+          @include breakpoint(msm) {
+            margin: 0.9px 1px;
           }
         }
       }
@@ -207,7 +247,14 @@ section {
         margin-bottom: 2rem;
       }
       @include breakpoint(sm) {
+        margin: 1rem 0;
+        margin-bottom: 2rem;
       }
+      @include breakpoint(msm) {
+        margin: 1rem 0;
+        margin-bottom: 2rem;
+      }
+
       a {
         cursor: pointer;
         text-decoration: none;
@@ -233,6 +280,10 @@ section {
           font-size: 20px;
         }
         @include breakpoint(sm) {
+          font-size: 20px;
+        }
+        @include breakpoint(msm) {
+          font-size: 20px;
         }
       }
 
@@ -266,6 +317,12 @@ section {
       margin-left: 6rem;
     }
     @include breakpoint(sm) {
+      justify-content: center;
+      align-items: center;
+    }
+    @include breakpoint(msm) {
+      justify-content: center;
+      align-items: center;
     }
     img {
       border-radius: 50%;
@@ -290,6 +347,14 @@ section {
         border: 5px solid $textcolor;
       }
       @include breakpoint(sm) {
+        width: 230px;
+        height: 230px;
+        border: 5px solid $textcolor;
+      }
+      @include breakpoint(msm) {
+        width: 300px;
+        height: 300px;
+        border: 5px solid $textcolor;
       }
     }
   }
