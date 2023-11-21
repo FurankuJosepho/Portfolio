@@ -15,21 +15,21 @@ section {
   // Media query
   @include breakpoint(xxs) {
     flex-direction: column-reverse;
-    height: 30.5rem;
+    height: 31.5rem;
     padding: 12px 0;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   @include breakpoint(mxs) {
     flex-direction: column-reverse;
-    height: 30.5rem;
+    height: 32.5rem;
     padding: 12px 0;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   @include breakpoint(xs) {
     flex-direction: column-reverse;
-    height: 30.5rem;
+    height: 31.5rem;
     padding: 12px 0;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   @include breakpoint(sm) {
     flex-direction: column-reverse;
