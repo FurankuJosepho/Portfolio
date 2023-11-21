@@ -33,6 +33,7 @@ section {
   }
   @include breakpoint(sm) {
     flex-direction: column-reverse;
+    overflow: hidden;
   }
 
   .Details {
