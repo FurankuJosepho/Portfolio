@@ -1,0 +1,52 @@
+@import "../scss/HomeBreakpoints.scss";
+//Defined variables
+$bgcolor: #1e1e1e;
+$textcolor: #d9d9d9;
+$textcolor2: rgba(138, 0, 0, 1);
+$fontfamily: "Inter";
+
+.Navbar {
+  background-color: $bgcolor !important;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  // Brand Design
+  .Brand {
+    color: $textcolor !important;
+    font-family: $fontfamily;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: relative;
+    left: 50px;
+
+    //Span for K
+    span {
+      color: $textcolor2;
+      font-family: $fontfamily;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 900;
+    }
+  }
+
+  // Links Design
+  .Links {
+    color: $textcolor !important;
+
+    //Link Titles
+    h6 {
+      font-family: $fontfamily;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+    }
+  }
+
+  //Navbar burger btn
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(138, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  }
+}
