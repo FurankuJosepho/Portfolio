@@ -21,8 +21,7 @@ section {
   }
   @include breakpoint(mxs) {
     flex-direction: column-reverse;
-    height: 50.5rem;
-    padding: 12px 0;
+    height: 55.5rem;
     overflow: hidden;
   }
   @include breakpoint(xs) {
@@ -59,8 +58,10 @@ section {
       margin-left: 3rem;
     }
     @include breakpoint(mxs) {
-      width: 225px;
-      margin-left: 8rem;
+      width: 325px;
+      margin-left: 5rem;
+      position: relative;
+      top: -5rem;
     }
     @include breakpoint(xs) {
       width: 225px;
@@ -88,7 +89,7 @@ section {
         font-size: 30px;
       }
       @include breakpoint(mxs) {
-        font-size: 30px;
+        font-size: 44px;
         text-align: center;
       }
       @include breakpoint(xs) {
@@ -119,7 +120,7 @@ section {
         font-size: 20px;
       }
       @include breakpoint(mxs) {
-        font-size: 20px;
+        font-size: 25px;
       }
       @include breakpoint(xs) {
         font-size: 20px;
@@ -191,8 +192,8 @@ section {
             height: 30px;
           }
           @include breakpoint(mxs) {
-            width: 30px;
-            height: 30px;
+            width: 50px;
+            height: 50px;
           }
           @include breakpoint(xs) {
             width: 30px;
@@ -274,7 +275,7 @@ section {
           font-size: 17px;
         }
         @include breakpoint(mxs) {
-          font-size: 17px;
+          font-size: 25px;
         }
         @include breakpoint(xs) {
           font-size: 17px;
@@ -311,6 +312,8 @@ section {
     @include breakpoint(mxs) {
       justify-content: start;
       margin-left: 9rem;
+      position: relative;
+      bottom: 10rem;
     }
     @include breakpoint(xs) {
       justify-content: start;
@@ -346,9 +349,9 @@ section {
       @include breakpoint(mxs) {
         justify-content: start;
         top: 11px;
-    right: 4rem;
-    width: 20rem;
-    height: 20rem;
+        right: 4rem;
+        width: 20rem;
+        height: 20rem;
         border: 7px solid $textcolor;
       }
       @include breakpoint(xs) {
