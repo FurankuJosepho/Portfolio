@@ -21,7 +21,7 @@ section {
   }
   @include breakpoint(mxs) {
     flex-direction: column-reverse;
-    height: 39.5rem;
+    height: 50.5rem;
     padding: 12px 0;
     overflow: hidden;
   }
