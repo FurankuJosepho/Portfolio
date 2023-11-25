@@ -1,0 +1,226 @@
+@import "../scss/Breakpoints.scss";
+//Defined variables
+$bgcolor: #1e1e1e;
+$textcolor: #d9d9d9;
+$textcolor2: rgba(138, 0, 0, 1);
+$fontfamily: "Inter";
+
+#Abouts {
+  background-color: $textcolor;
+  height: 36.4rem;
+  color: $bgcolor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 4rem;
+
+  @include breakpoint(xxs) {
+    padding-bottom: 0;
+  }
+  @include breakpoint(xs) {
+    padding-bottom: 0;
+  }
+  @include breakpoint(mxs) {
+  }
+  @include breakpoint(sm) {
+  }
+  @include breakpoint(msm) {
+  }
+
+  .Title {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include breakpoint(xxs) {
+      position: relative;
+      top: -63px;
+      margin: 30px;
+    }
+    @include breakpoint(xs) {
+    }
+    @include breakpoint(mxs) {
+    }
+    @include breakpoint(sm) {
+    }
+    @include breakpoint(msm) {
+    }
+
+    h1 {
+      font-size: 3vw;
+      font-weight: 700;
+      margin-bottom: 0;
+
+      @include breakpoint(xxs) {
+        font-size: 20px;
+      }
+      @include breakpoint(xs) {
+      }
+      @include breakpoint(mxs) {
+      }
+      @include breakpoint(sm) {
+      }
+      @include breakpoint(msm) {
+      }
+    }
+    hr {
+      border: 2px solid $textcolor2;
+      width: 130px;
+      opacity: 100%;
+      margin: 0;
+
+      @include breakpoint(xxs) {
+        width: 75px;
+      }
+      @include breakpoint(xs) {
+      }
+      @include breakpoint(mxs) {
+      }
+      @include breakpoint(sm) {
+      }
+      @include breakpoint(msm) {
+      }
+    }
+  }
+
+  .dark {
+    height: 380px;
+    width: 100%;
+    background-color: $bgcolor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint(xxs) {
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+      width: 100%;
+    }
+    @include breakpoint(xs) {
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+      width: 100%;
+    }
+    @include breakpoint(mxs) {
+    }
+    @include breakpoint(sm) {
+    }
+    @include breakpoint(msm) {
+    }
+
+    .Picture2nd {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      @include breakpoint(xxs) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+      }
+      @include breakpoint(xs) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+      }
+      @include breakpoint(mxs) {
+      }
+      @include breakpoint(sm) {
+      }
+      @include breakpoint(msm) {
+      }
+
+      img {
+        position: relative;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        border: 40px solid $bgcolor;
+        margin-right: 4rem;
+
+        @include breakpoint(xxs) {
+          width: 155px;
+          height: 155px;
+          border: 9px solid $bgcolor;
+          top: -204px;
+          right: -2rem;
+        }
+        @include breakpoint(xs) {
+          width: 170px;
+          height: 170px;
+          border: 9px solid $bgcolor;
+          top: -204px;
+          right: -2rem;
+        }
+        @include breakpoint(mxs) {
+        }
+        @include breakpoint(sm) {
+        }
+        @include breakpoint(msm) {
+        }
+      }
+    }
+
+    //Intro
+    .Intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        line-height: 80px;
+
+        @include breakpoint(xxs) {
+          font-size: 1rem;
+          margin-top: 3rem;
+          margin-bottom: 0;
+        }
+        @include breakpoint(xs) {
+          font-size: 25px;
+          margin-top: 3rem;
+          margin-bottom: 0;
+        }
+        @include breakpoint(mxs) {
+        }
+        @include breakpoint(sm) {
+        }
+        @include breakpoint(msm) {
+        }
+      }
+
+      p {
+        width: 30rem;
+        font-size: 20px;
+        line-height: 35px;
+
+        @include breakpoint(xxs) {
+          width: 18rem;
+          font-size: 14px;
+          line-height: 25px;
+          text-align: center;
+        }
+        @include breakpoint(xs) {
+          width: 23rem;
+          font-size: 15px;
+          line-height: 30px;
+          text-align: center;
+        }
+        @include breakpoint(mxs) {
+        }
+        @include breakpoint(sm) {
+        }
+        @include breakpoint(msm) {
+        }
+      }
+    }
+  }
+}

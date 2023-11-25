@@ -1,7 +1,5 @@
 //Scss Imports
 import "../scss/Home.scss";
-import "../scss/HomeBreakpoints.scss";
-
 //Fontawesome Import
 
 const Home = () => {
@@ -252,12 +250,12 @@ const Home = () => {
         </div>
 
         <div className="btn">
-          <a href="Abouts">Hire Me</a>
+          <a href="#Abouts">Hire Me</a>
         </div>
       </div>
       <div className="Picture">
-        <div className="Circle">
-          <img src="https://github.com/FurankuJosepho/Portfolio/raw/main/img/Profile.jpg" alt="Profile" />
+        <div className="Circle2">
+          <img src="https://github.com/FurankuJosepho/Imports/raw/main/Abosolute.png" alt="Profile" />
         </div>
       </div>
     </section>
