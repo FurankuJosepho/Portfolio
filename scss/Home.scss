@@ -21,7 +21,7 @@ section {
   }
   @include breakpoint(mxs) {
     flex-direction: column-reverse;
-    height: 33.5rem;
+    height: 39.5rem;
     padding: 12px 0;
     overflow: hidden;
   }
@@ -346,9 +346,9 @@ section {
       @include breakpoint(mxs) {
         justify-content: start;
         top: 11px;
-        right: 1rem;
-        width: 14rem;
-        height: 14rem;
+    right: 4rem;
+    width: 20rem;
+    height: 20rem;
         border: 7px solid $textcolor;
       }
       @include breakpoint(xs) {
@@ -389,10 +389,10 @@ section {
           height: 195px;
         }
         @include breakpoint(mxs) {
-          top: -13px;
-          right: -33px;
-          width: 141px;
-          height: 225px;
+          top: -27px;
+          right: -35px;
+          width: 230px;
+          height: 350px;
         }
         @include breakpoint(xs) {
           top: -16px;
