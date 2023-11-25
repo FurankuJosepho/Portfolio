@@ -21,7 +21,7 @@ section {
   }
   @include breakpoint(mxs) {
     flex-direction: column-reverse;
-    height: 32.5rem;
+    height: 33.5rem;
     padding: 12px 0;
     overflow: hidden;
   }
@@ -32,12 +32,12 @@ section {
     overflow: hidden;
   }
   @include breakpoint(sm) {
-    height: 19.5rem;
+    height: 29.5rem;
     padding: 12px 0;
     overflow: hidden;
   }
   @include breakpoint(msm) {
-    height: 20.5rem;
+    height: 29.5rem;
     padding: 12px 0;
     overflow: hidden;
   }
@@ -271,19 +271,19 @@ section {
 
         // Media query
         @include breakpoint(xxs) {
-          font-size: 20px;
+          font-size: 17px;
         }
         @include breakpoint(mxs) {
-          font-size: 20px;
+          font-size: 17px;
         }
         @include breakpoint(xs) {
-          font-size: 20px;
+          font-size: 17px;
         }
         @include breakpoint(sm) {
-          font-size: 20px;
+          font-size: 17px;
         }
         @include breakpoint(msm) {
-          font-size: 20px;
+          font-size: 17px;
         }
       }
 
