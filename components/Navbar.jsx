@@ -27,7 +27,7 @@ const navbar = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-center flex-grow-1 pe-4">
-                  <Nav.Link href="/abouts" className="Links">
+                  <Nav.Link href="#Abouts" className="Links">
                     <h6>About</h6>
                   </Nav.Link>
                   <Nav.Link href="/services" className="Links">

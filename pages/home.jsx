@@ -250,7 +250,7 @@ const Home = () => {
         </div>
 
         <div className="btn">
-          <a href="#Abouts">Hire Me</a>
+          <a href="#Abouts">Learn More</a>
         </div>
       </div>
       <div className="Picture">

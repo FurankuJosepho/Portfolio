@@ -14,11 +14,9 @@ function App() {
   return (
     <Router>
       <Navbar/>
-      {/* <Home/>
-      <About/> */}
+      <Home/>
+      <About/>
       <Routes>
-        <Route path="/" exact element={<Home/>}/>
-        <Route path="/abouts" exact element={<About/>}/>
         <Route path="/services" exact element={<Resume/>}/>
         <Route path="/projects" exact element={<Sample/>}/>
       </Routes>
