@@ -69,7 +69,7 @@ section {
     }
     @include breakpoint(sm) {
       width: 225px;
-      margin-left: 5rem;
+      margin-left: 2rem;
     }
     @include breakpoint(msm) {
       width: 225px;
@@ -234,6 +234,7 @@ section {
     //btn
     .btn {
       margin: 3rem;
+
       // Media query
       @include breakpoint(xxs) {
         margin: 1rem 0;
@@ -257,6 +258,9 @@ section {
       }
 
       a {
+        -webkit-box-shadow: 0px 0px 18px 0px #d50101;
+        -moz-box-shadow: 0px 0px 18px 0px #d50101;
+        box-shadow: 0px 0px 18px 0px #d50101;
         cursor: pointer;
         text-decoration: none;
         color: $textcolor2;
@@ -335,8 +339,11 @@ section {
       position: relative;
       width: 30rem;
       height: 30rem;
-      border: 13px solid $textcolor;
+      border: 6px solid $textcolor;
       border-radius: 50%;
+      -webkit-box-shadow: 0px 0px 38px 0px #d50101;
+      -moz-box-shadow: 0px 0px 38px 0px #d50101;
+      box-shadow: 0px 0px 88px 0px #d50101;
 
       // Media query
       @include breakpoint(xxs) {
@@ -365,8 +372,8 @@ section {
       @include breakpoint(sm) {
         justify-content: start;
         right: -0.5rem;
-        width: 13rem;
-        height: 13rem;
+        width: 16rem;
+        height: 16rem;
         border: 6px solid #d9d9d9;
       }
       @include breakpoint(msm) {
@@ -382,38 +389,44 @@ section {
         top: -25px;
         width: 300px;
         height: 500px;
-        border-radius: 10% 10% 45% 46%;
+        border-radius: 10% 10% 31% 31%;
+        aspect-ratio: 1/1;
 
         // Media query
         @include breakpoint(xxs) {
-          top: -18px;
+          top: -22px;
           right: -19px;
           width: 123px;
           height: 195px;
+          aspect-ratio: 1/1;
         }
         @include breakpoint(mxs) {
-          top: -27px;
+          top: -34px;
           right: -35px;
           width: 230px;
           height: 350px;
+          aspect-ratio: 1/1;
         }
         @include breakpoint(xs) {
-          top: -16px;
+          top: -18px;
           right: -29px;
           width: 140px;
           height: 215px;
+          aspect-ratio: 1/1;
         }
         @include breakpoint(sm) {
-          top: -27px;
-          right: -24px;
-          width: 150px;
-          height: 245px;
+          top: -32px;
+          right: -34px;
+          width: 180px;
+          height: 290px;
+          aspect-ratio: 1/1;
         }
         @include breakpoint(msm) {
-          top: -13px;
+          top: -20px;
           right: -45px;
           width: 190px;
           height: 300px;
+          aspect-ratio: 1/1;
         }
       }
     }
