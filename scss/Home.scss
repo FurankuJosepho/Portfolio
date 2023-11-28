@@ -1,432 +1,188 @@
-@import "../scss/Breakpoints.scss";
+@import "../scss/Breakpoints2.scss";
 //Defined variables
 $bgcolor: #1e1e1e;
 $textcolor: #d9d9d9;
 $textcolor2: rgba(138, 0, 0, 1);
 $fontfamily: "Inter";
 
-section {
+.Home {
   background-color: $bgcolor;
-  height: 39.4rem;
-  color: $textcolor;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 39.4rem;
+  max-width: 1400px;
+  overflow-x: hidden;
 
-  // Media query
-  @include breakpoint(xxs) {
-    flex-direction: column-reverse;
-    height: 31.5rem;
-    padding: 12px 0;
-    overflow: hidden;
-  }
-  @include breakpoint(mxs) {
-    flex-direction: column-reverse;
-    height: 55.5rem;
-    overflow: hidden;
-  }
-  @include breakpoint(xs) {
-    flex-direction: column-reverse;
-    height: 31.5rem;
-    padding: 12px 0;
-    overflow: hidden;
-  }
-  @include breakpoint(sm) {
-    height: 29.5rem;
-    padding: 12px 0;
-    overflow: hidden;
-  }
-  @include breakpoint(msm) {
-    height: 29.5rem;
-    padding: 12px 0;
-    overflow: hidden;
-  }
+@include xxs {
+  height: 45.5rem;
+}
 
-  .Details {
+  .Container {
+    border: 2px solid red;
+    max-width: 1300px;
+    margin: 0 65px;
     display: flex;
-    position: relative;
-    top: 25px;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 440px;
-    text-align: center;
-    margin-left: 10rem;
 
-    // Media query
-    @include breakpoint(xxs) {
-      width: 225px;
-      margin-left: 3rem;
-    }
-    @include breakpoint(mxs) {
-      width: 325px;
-      margin-left: 5rem;
-      position: relative;
-      top: -5rem;
-    }
-    @include breakpoint(xs) {
-      width: 225px;
-      margin-left: 5rem;
-    }
-    @include breakpoint(sm) {
-      width: 225px;
-      margin-left: 2rem;
-    }
-    @include breakpoint(msm) {
-      width: 225px;
-      margin-left: 5rem;
+    @include xxs{
+      flex-direction: column-reverse;
+      max-width: 320px;
     }
 
-    //User Name
-    h1 {
-      font-family: $fontfamily;
-      font-size: 60px;
-      font-style: normal;
-      font-weight: 800;
-      line-height: normal;
-
-      // Media query
-      @include breakpoint(xxs) {
-        font-size: 30px;
-      }
-      @include breakpoint(mxs) {
-        font-size: 44px;
-        text-align: center;
-      }
-      @include breakpoint(xs) {
-        font-size: 30px;
-        text-align: center;
-      }
-      @include breakpoint(sm) {
-        font-size: 30px;
-        text-align: center;
-      }
-      @include breakpoint(msm) {
-        font-size: 30px;
-        text-align: center;
-      }
-    }
-
-    //Fullstack Dev
-    h5 {
-      color: $textcolor2;
-      font-family: $fontfamily;
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 210.8%;
-
-      // Media query
-      @include breakpoint(xxs) {
-        font-size: 20px;
-      }
-      @include breakpoint(mxs) {
-        font-size: 25px;
-      }
-      @include breakpoint(xs) {
-        font-size: 20px;
-      }
-      @include breakpoint(sm) {
-        font-size: 20px;
-      }
-      @include breakpoint(msm) {
-        font-size: 20px;
-      }
-    }
-
-    //Circles
-    .Circles {
+    .Details {
+      border: 2px solid red;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 10px 0;
+      margin: 30px;
+      color: $textcolor;
+      padding: 20px;
+      text-align: center;
 
-      // Media query
-      @include breakpoint(xxs) {
-        margin: 1px 0;
-      }
-      @include breakpoint(mxs) {
-        margin: 1px 0;
-      }
-      @include breakpoint(xs) {
-        margin: 1px 0;
-      }
-      @include breakpoint(sm) {
-        margin: 1px 0;
-      }
-      @include breakpoint(msm) {
-        margin: 1px 0;
+      @include xxs {
+        max-width: 310px;
       }
 
-      .Circle {
-        margin: 0 10px;
-        padding: 10px;
-        border-radius: 50%;
-        background-color: $textcolor;
+      .Names {
+        border: 2px solid red;
+        margin: 10px;
+        width: 500px;
 
-        // Media query
-        @include breakpoint(xxs) {
-          padding: 5px;
-          margin: 0 5px;
-        }
-        @include breakpoint(mxs) {
-          padding: 5px;
-          margin: 0 5px;
-        }
-        @include breakpoint(xs) {
-          padding: 5px;
-          margin: 0 5px;
-        }
-        @include breakpoint(sm) {
-          padding: 5px;
-          margin: 0 5px;
-        }
-        @include breakpoint(msm) {
-          padding: 5px;
-          margin: 0 5px;
+        @include xxs {
+          width: 100%;
         }
 
-        svg {
-          // Media query
-          @include breakpoint(xxs) {
-            width: 30px;
-            height: 30px;
+        .Name {
+          font-family: $fontfamily;
+          font-size: 60px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+
+          @include xxs {
+            font-size: 30px;
           }
-          @include breakpoint(mxs) {
-            width: 50px;
-            height: 50px;
+        }
+
+        .Dev {
+          color: $textcolor2;
+          font-family: $fontfamily;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 210.8%;
+
+          @include xxs {
+            font-size: 20px;
           }
-          @include breakpoint(xs) {
-            width: 30px;
-            height: 30px;
-          }
-          @include breakpoint(sm) {
-            width: 30px;
-            height: 30px;
-          }
-          @include breakpoint(msm) {
-            width: 30px;
-            height: 30px;
+        }
+      }
+
+      .Circles {
+        border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        width: 500px;
+
+        .Circle {
+          margin: 0 10px;
+          padding: 10px;
+          border-radius: 50%;
+          background-color: $textcolor;
+
+          svg{
+            @include xxs{
+              width: 25px;
+              height: 25px;
+            }
           }
         }
 
         .Bootstrap {
           margin: 6px 0;
 
-          // Media query
-          @include breakpoint(xxs) {
-            margin: 0.9px 1px;
-          }
-          @include breakpoint(mxs) {
-            margin: 0.9px 1px;
-          }
-          @include breakpoint(xs) {
-            margin: 0.9px 1px;
-          }
-          @include breakpoint(sm) {
-            margin: 0.9px 1px;
-          }
-          @include breakpoint(msm) {
-            margin: 0.9px 1px;
+          @include xxs {
+            margin: 2px 0;
           }
         }
       }
-    }
-    //btn
-    .btn {
-      margin: 3rem;
 
-      // Media query
-      @include breakpoint(xxs) {
-        margin: 1rem 0;
-        margin-bottom: 2rem;
-      }
-      @include breakpoint(mxs) {
-        margin: 1rem 0;
-        margin-bottom: 2rem;
-      }
-      @include breakpoint(xs) {
-        margin: 1rem 0;
-        margin-bottom: 2rem;
-      }
-      @include breakpoint(sm) {
-        margin: 1rem 0;
-        margin-bottom: 2rem;
-      }
-      @include breakpoint(msm) {
-        margin: 1rem 0;
-        margin-bottom: 2rem;
-      }
-
-      a {
-        -webkit-box-shadow: 0px 0px 18px 0px #d50101;
-        -moz-box-shadow: 0px 0px 18px 0px #d50101;
-        box-shadow: 0px 0px 18px 0px #d50101;
+      .Danger {
         cursor: pointer;
         text-decoration: none;
-        color: $textcolor2;
-        text-align: center;
-        font-family: Inter;
+        border: 2px solid $textcolor2;
+        width: 230px;
+        font-family: $fontfamily;
         font-size: 30px;
         font-style: normal;
         font-weight: 600;
-        line-height: 210.8%; /* 84.32px */
-        border: 2px solid $textcolor2;
-        padding: 5px 50px;
+        line-height: 185.8%;
+        color: $textcolor2;
         border-radius: 20px;
+        margin: 20px;
 
-        // Media query
-        @include breakpoint(xxs) {
-          font-size: 17px;
+        @include xxs {
+          font-size: 20px;
+          margin: 10px;
         }
-        @include breakpoint(mxs) {
-          font-size: 25px;
-        }
-        @include breakpoint(xs) {
-          font-size: 17px;
-        }
-        @include breakpoint(sm) {
-          font-size: 17px;
-        }
-        @include breakpoint(msm) {
-          font-size: 17px;
+
+        &:hover{
+          transition: all 0.3s ease-in-out;
+          border: 2px solid $textcolor2;
+          background-color: $textcolor2;
+          color: $textcolor;
         }
       }
-
-      a:hover {
-        transition: all 0.3s ease-in-out;
-        border: 2px solid $textcolor2;
-        background-color: $textcolor2;
-        color: $textcolor;
-      }
-    }
-  }
-
-  // Profile Picture
-  .Picture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50rem;
-
-    // Media query
-    @include breakpoint(xxs) {
-      justify-content: start;
-      margin-left: 4rem;
-    }
-    @include breakpoint(mxs) {
-      justify-content: start;
-      margin-left: 9rem;
-      position: relative;
-      bottom: 10rem;
-    }
-    @include breakpoint(xs) {
-      justify-content: start;
-      margin-left: 6rem;
-    }
-    @include breakpoint(sm) {
-      justify-content: center;
-      align-items: center;
-    }
-    @include breakpoint(msm) {
-      justify-content: center;
-      align-items: center;
     }
 
-    .Circle2 {
+    .Picture {
+      border: 2px solid red;
+      margin: 30px;
+      max-width: 45rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative;
-      width: 30rem;
-      height: 30rem;
-      border: 6px solid $textcolor;
-      border-radius: 50%;
-      -webkit-box-shadow: 0px 0px 38px 0px #d50101;
-      -moz-box-shadow: 0px 0px 38px 0px #d50101;
-      box-shadow: 0px 0px 88px 0px #d50101;
 
-      // Media query
-      @include breakpoint(xxs) {
-        justify-content: start;
-        right: -1rem;
-        width: 11rem;
-        height: 11rem;
-        border: 7px solid $textcolor;
-      }
-      @include breakpoint(mxs) {
-        justify-content: start;
-        top: 11px;
-        right: 4rem;
-        width: 20rem;
-        height: 20rem;
-        border: 7px solid $textcolor;
-      }
-      @include breakpoint(xs) {
-        justify-content: start;
-        top: 11px;
-        right: 0rem;
-        width: 13rem;
-        height: 13rem;
-        border: 8px solid $textcolor;
-      }
-      @include breakpoint(sm) {
-        justify-content: start;
-        right: -0.5rem;
-        width: 16rem;
-        height: 16rem;
-        border: 6px solid #d9d9d9;
-      }
-      @include breakpoint(msm) {
-        justify-content: start;
-        right: -0.5rem;
-        width: 18rem;
-        height: 18rem;
-        border: 6px solid #d9d9d9;
+      @include xxs{
+        max-width: 20rem;
       }
 
-      img {
+      .Circle2 {
         position: relative;
-        top: -25px;
-        width: 300px;
-        height: 500px;
-        border-radius: 10% 10% 31% 31%;
-        aspect-ratio: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30rem;
+        height: 30rem;
+        border-radius: 100%;
+        border: 6px solid $textcolor;
+        -webkit-box-shadow: 0px 0px 38px 0px #d50101;
+        -moz-box-shadow: 0px 0px 38px 0px #d50101;
+        box-shadow: 0px 0px 88px 0px #d50101;
 
-        // Media query
-        @include breakpoint(xxs) {
-          top: -22px;
-          right: -19px;
-          width: 123px;
-          height: 195px;
-          aspect-ratio: 1/1;
+        @include xxs{
+          top: 3rem;
+          width: 16rem;
+          height: 16rem;
         }
-        @include breakpoint(mxs) {
-          top: -34px;
-          right: -35px;
-          width: 230px;
-          height: 350px;
-          aspect-ratio: 1/1;
-        }
-        @include breakpoint(xs) {
-          top: -18px;
-          right: -29px;
-          width: 140px;
-          height: 215px;
-          aspect-ratio: 1/1;
-        }
-        @include breakpoint(sm) {
-          top: -32px;
-          right: -34px;
-          width: 180px;
-          height: 290px;
-          aspect-ratio: 1/1;
-        }
-        @include breakpoint(msm) {
-          top: -20px;
-          right: -45px;
-          width: 190px;
-          height: 300px;
-          aspect-ratio: 1/1;
+
+        img {
+          position: relative;
+          aspect-ratio: 1;
+          top: -28px;
+          width: 300px;
+          height: 500px;
+          border-radius: 0% 0% 30% 30%;
+
+          @include xxs{
+            width: 170px;
+            height: 285px;
+          }
         }
       }
     }
