@@ -22,6 +22,7 @@ $fontfamily: "Inter";
   }
   @include sm {
     height: 60.5rem;
+    align-items: flex-start;
   }
 
   .Container {
