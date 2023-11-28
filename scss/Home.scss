@@ -14,9 +14,15 @@ $fontfamily: "Inter";
   max-width: 1400px;
   overflow-x: hidden;
 
-@include xxs {
-  height: 45.5rem;
-}
+  @include xxs {
+    height: 45.5rem;
+  }
+  @include xs {
+    height: 55.5rem;
+  }
+  @include sm {
+    height: 60.5rem;
+  }
 
   .Container {
     border: 2px solid red;
@@ -26,7 +32,7 @@ $fontfamily: "Inter";
     justify-content: center;
     align-items: center;
 
-    @include xxs{
+    @include xxs {
       flex-direction: column-reverse;
       max-width: 320px;
     }
@@ -89,14 +95,22 @@ $fontfamily: "Inter";
         margin: 10px 0;
         width: 500px;
 
+        @include xxs {
+          width: 100%;
+        }
+
         .Circle {
           margin: 0 10px;
           padding: 10px;
           border-radius: 50%;
           background-color: $textcolor;
 
-          svg{
-            @include xxs{
+          @include xxs {
+            margin: 0 5px;
+          }
+
+          svg {
+            @include xxs {
               width: 25px;
               height: 25px;
             }
@@ -107,7 +121,7 @@ $fontfamily: "Inter";
           margin: 6px 0;
 
           @include xxs {
-            margin: 2px 0;
+            margin: 1px 0;
           }
         }
       }
@@ -131,7 +145,7 @@ $fontfamily: "Inter";
           margin: 10px;
         }
 
-        &:hover{
+        &:hover {
           transition: all 0.3s ease-in-out;
           border: 2px solid $textcolor2;
           background-color: $textcolor2;
@@ -148,7 +162,7 @@ $fontfamily: "Inter";
       align-items: center;
       justify-content: center;
 
-      @include xxs{
+      @include xxs {
         max-width: 20rem;
       }
 
@@ -165,8 +179,8 @@ $fontfamily: "Inter";
         -moz-box-shadow: 0px 0px 38px 0px #d50101;
         box-shadow: 0px 0px 88px 0px #d50101;
 
-        @include xxs{
-          top: 3rem;
+        @include xxs {
+          top: 0.5rem;
           width: 16rem;
           height: 16rem;
         }
@@ -179,7 +193,7 @@ $fontfamily: "Inter";
           height: 500px;
           border-radius: 0% 0% 30% 30%;
 
-          @include xxs{
+          @include xxs {
             width: 170px;
             height: 285px;
           }
