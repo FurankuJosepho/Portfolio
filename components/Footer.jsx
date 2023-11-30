@@ -1,8 +1,9 @@
+import "../scss/Navbar.scss";
 const Footer = () => {
   return (
-    <div>
-      <h3>Footer</h3>
-    </div>
+    <footer>
+      <p>&copy; 2019 - {new Date().getFullYear()} | <span className="WebName">Fran<span className="Bold-K">K</span>oders</span> | <a href="https://github.com/FurankuJosepho" className="Github">FurankuJosephoGithub</a></p>
+    </footer>
   )
 }
 

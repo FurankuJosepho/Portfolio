@@ -1,4 +1,4 @@
-@import "../scss/Breakpoints.scss";
+@import "../scss/Breakpoints2.scss";
 //Defined variables
 $bgcolor: #1e1e1e;
 $textcolor: #d9d9d9;
@@ -15,22 +15,6 @@ $fontfamily: "Inter";
   flex-direction: column;
   padding-bottom: 4rem;
 
-  @include breakpoint(xxs) {
-    padding-bottom: 0;
-  }
-  @include breakpoint(xs) {
-    padding-bottom: 0;
-  }
-  @include breakpoint(mxs) {
-    padding-bottom: 0;
-  }
-  @include breakpoint(sm) {
-    height: 32.4rem;
-  }
-  @include breakpoint(msm) {
-    height: 32.4rem;
-  }
-
   .Title {
     margin: 15px;
     display: flex;
@@ -38,70 +22,16 @@ $fontfamily: "Inter";
     align-items: center;
     flex-direction: column;
 
-    @include breakpoint(xxs) {
-      position: relative;
-      top: -63px;
-      margin: 30px;
-    }
-    @include breakpoint(xs) {
-      position: relative;
-      top: -63px;
-      margin: 40px;
-    }
-    @include breakpoint(mxs) {
-      position: relative;
-      top: -63px;
-      margin: 40px;
-    }
-    @include breakpoint(sm) {
-      margin-top: 0;
-    }
-    @include breakpoint(msm) {
-      margin-top: 0;
-    }
-
     h1 {
       font-size: 3vw;
       font-weight: 700;
       margin-bottom: 0;
-
-      @include breakpoint(xxs) {
-        font-size: 20px;
-      }
-      @include breakpoint(xs) {
-        font-size: 20px;
-      }
-      @include breakpoint(mxs) {
-        font-size: 20px;
-      }
-      @include breakpoint(sm) {
-        font-size: 20px;
-      }
-      @include breakpoint(msm) {
-        font-size: 30px;
-      }
     }
     hr {
       border: 2px solid $textcolor2;
       width: 130px;
       opacity: 100%;
       margin: 0;
-
-      @include breakpoint(xxs) {
-        width: 75px;
-      }
-      @include breakpoint(xs) {
-        width: 75px;
-      }
-      @include breakpoint(mxs) {
-        width: 75px;
-      }
-      @include breakpoint(sm) {
-        width: 75px;
-      }
-      @include breakpoint(msm) {
-        width: 85px;
-      }
     }
   }
 
@@ -113,56 +43,11 @@ $fontfamily: "Inter";
     align-items: center;
     justify-content: center;
 
-    @include breakpoint(xxs) {
-      display: flex;
-      flex-direction: column;
-      height: 400px;
-      width: 100%;
-    }
-    @include breakpoint(xs) {
-      display: flex;
-      flex-direction: column;
-      height: 400px;
-      width: 100%;
-    }
-    @include breakpoint(mxs) {
-      display: flex;
-      flex-direction: column;
-      height: 400px;
-      width: 100%;
-    }
-    @include breakpoint(sm) {
-      padding-right: 20px;
-    }
-    @include breakpoint(msm) {
-    }
-
     .Picture2nd {
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
-
-      @include breakpoint(xxs) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-      }
-      @include breakpoint(xs) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-      }
-      @include breakpoint(mxs) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-      }
-      @include breakpoint(msm) {
-      }
 
       img {
         position: relative;
@@ -171,43 +56,6 @@ $fontfamily: "Inter";
         border-radius: 50%;
         border: 40px solid $bgcolor;
         margin-right: 4rem;
-
-        @include breakpoint(xxs) {
-          width: 155px;
-          height: 155px;
-          border: 9px solid $bgcolor;
-          top: -204px;
-          right: -2rem;
-        }
-        @include breakpoint(xs) {
-          width: 170px;
-          height: 170px;
-          border: 9px solid $bgcolor;
-          top: -204px;
-          right: -2rem;
-        }
-        @include breakpoint(mxs) {
-          width: 170px;
-          height: 170px;
-          border: 9px solid $bgcolor;
-          top: -204px;
-          right: -2rem;
-        }
-        @include breakpoint(sm) {
-          width: 270px;
-          height: 270px;
-          border: 9px solid #1e1e1e;
-          top: -9px;
-          margin-right: 0;
-        }
-        @include breakpoint(msm) {
-          width: 270px;
-          height: 270px;
-          border: 9px solid #1e1e1e;
-          top: -9px;
-          right: 38px;
-          margin-right: 0;
-        }
       }
     }
 
@@ -218,76 +66,14 @@ $fontfamily: "Inter";
       justify-content: center;
       align-items: center;
 
-      @include breakpoint(sm) {
-        margin-top: 55px;
-      }
-      @include breakpoint(msm) {
-        margin-top: 60px;
-      }
-
       h3 {
         line-height: 80px;
-
-        @include breakpoint(xxs) {
-          font-size: 1rem;
-          margin-top: 3rem;
-          margin-bottom: 0;
-        }
-        @include breakpoint(xs) {
-          font-size: 25px;
-          margin-top: 3rem;
-          margin-bottom: 0;
-        }
-        @include breakpoint(mxs) {
-          font-size: 25px;
-          margin-top: 3rem;
-          margin-bottom: 0;
-        }
-        @include breakpoint(sm) {
-          font-size: 20px;
-          margin-top: -6rem;
-          margin-bottom: 0;
-        }
-        @include breakpoint(msm) {
-          font-size: 25px;
-          margin-top: -6rem;
-          margin-bottom: 0;
-        }
       }
 
       p {
         width: 30rem;
         font-size: 20px;
         line-height: 35px;
-
-        @include breakpoint(xxs) {
-          width: 18rem;
-          font-size: 14px;
-          line-height: 25px;
-          text-align: center;
-        }
-        @include breakpoint(xs) {
-          width: 23rem;
-          font-size: 15px;
-          line-height: 30px;
-          text-align: center;
-        }
-        @include breakpoint(mxs) {
-          width: 23rem;
-          font-size: 15px;
-          line-height: 30px;
-          text-align: center;
-        }
-        @include breakpoint(sm) {
-          width: 18rem;
-          font-size: 13px;
-          line-height: 32px;
-        }
-        @include breakpoint(msm) {
-          width: 25rem;
-          font-size: 16px;
-          line-height: 35px;
-        }
       }
     }
   }
