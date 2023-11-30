@@ -39,7 +39,7 @@ $fontfamily: "Inter";
     height: 35.5rem;
   }
   @include xxl {
-    height: 39.5rem;
+    height: 37.5rem;
   }
 
   .Container {
@@ -141,6 +141,9 @@ $fontfamily: "Inter";
           @include xxl {
             font-size: 60px;
           }
+          @include breakpoints (1064px) {
+            font-size: 52px;
+          }
         }
 
         .Dev {
@@ -169,13 +172,15 @@ $fontfamily: "Inter";
           @include xxl {
             font-size: 30px;
           }
+          @include breakpoints (1064px) {
+            font-size: 30px;
+          }
         }
       }
 
       .Circles {
         // border: 2px solid red;
-        display: flex;
-        justify-content: center;
+        display: flex;        justify-content: center;
         align-items: center;
         margin: 10px 0;
         width: 500px;
