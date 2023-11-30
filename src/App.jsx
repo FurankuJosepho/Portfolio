@@ -7,22 +7,22 @@ import Resume from "../pages/resume";
 import Sample from "../pages/Sample";
 
 // Routers for every Componenets
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 function App() {
   return (
     <Router>
-      <Navbar/>
-      <Home/>
-      <About/>
+      <Navbar />
       <Routes>
-        <Route path="/services" exact element={<Resume/>}/>
-        <Route path="/projects" exact element={<Sample/>}/>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/abouts" exact element={<About />} />
+        <Route path="/services" exact element={<Resume />} />
+        <Route path="/projects" exact element={<Sample />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -18,11 +18,16 @@ $fontfamily: "Inter";
     height: 45.5rem;
   }
   @include xs {
-    height: 55.5rem;
+    height: 43.5rem;
+    align-items: flex-start;
   }
   @include sm {
-    height: 60.5rem;
+    padding-top: 3rem;
+    height: 50.5rem;
     align-items: flex-start;
+  }
+  @include md {
+    flex-direction: row;
   }
 
   .Container {
@@ -36,6 +41,9 @@ $fontfamily: "Inter";
     @include xxs {
       flex-direction: column-reverse;
       max-width: 320px;
+    }
+    @include md {
+      max-width: 480px;
     }
 
     .Details {
@@ -51,6 +59,10 @@ $fontfamily: "Inter";
 
       @include xxs {
         max-width: 310px;
+        margin: 0 30px;
+      }
+      @include md {
+        max-width: 480px;
       }
 
       .Names {
@@ -72,6 +84,9 @@ $fontfamily: "Inter";
           @include xxs {
             font-size: 30px;
           }
+          @include md {
+            font-size: 38px;
+          }
         }
 
         .Dev {
@@ -84,6 +99,9 @@ $fontfamily: "Inter";
 
           @include xxs {
             font-size: 20px;
+          }
+          @include md {
+            font-size: 25px;
           }
         }
       }
@@ -114,6 +132,10 @@ $fontfamily: "Inter";
             @include xxs {
               width: 25px;
               height: 25px;
+            }
+            @include md {
+              width: 30px;
+              height: 30px;
             }
           }
         }
@@ -166,6 +188,9 @@ $fontfamily: "Inter";
       @include xxs {
         max-width: 20rem;
       }
+      @include md {
+        max-width: 45rem;
+      }
 
       .Circle2 {
         position: relative;
@@ -185,6 +210,11 @@ $fontfamily: "Inter";
           width: 16rem;
           height: 16rem;
         }
+        @include md {
+          top: 0rem;
+          width: 20rem;
+          height: 20rem;
+        }
 
         img {
           position: relative;
@@ -197,6 +227,11 @@ $fontfamily: "Inter";
           @include xxs {
             width: 170px;
             height: 285px;
+          }
+          @include md {
+            top: -25px;
+            width: 205px;
+            height: 335px;
           }
         }
       }
