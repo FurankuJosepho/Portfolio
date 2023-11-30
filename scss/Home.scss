@@ -13,6 +13,9 @@ $fontfamily: "Inter";
   height: 39.4rem;
   max-width: 1440px;
   overflow-x: hidden;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+
 
   @include xxs {
     height: 45.5rem;
@@ -23,7 +26,7 @@ $fontfamily: "Inter";
   }
   @include sm {
     padding-top: 3rem;
-    height: 52rem;
+    height: 51.9rem;
     align-items: flex-start;
   }
   @include md {
