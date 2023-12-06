@@ -79,8 +79,20 @@ $fontfamily: "Inter";
       p {
         font-family: $fontfamily;
         width: 30rem;
-        font-size: 20px;
+        font-size: 15px;
         line-height: 35px;
+      }
+      .btn {
+        .Link {
+          padding: 10px 10rem;
+          text-decoration: none;
+          color: $textcolor;
+          background-color: $textcolor2;
+          border-radius: 10px;
+          font-size: 25px;
+          font-weight: 700;
+          font-family: $fontfamily;
+        }
       }
     }
   }

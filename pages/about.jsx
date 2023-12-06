@@ -9,10 +9,7 @@ const About = () => {
       </div>
       <section className="dark">
         <div className="Picture2nd">
-          <img
-            src="./assets/1v1 2.jpg"
-            alt="Profile"
-          />
+          <img src="./assets/1v1 2.jpg" alt="Profile" />
         </div>
         <div className="Intro">
           <h3>Hi I&apos;m Frank Joseph Garcia</h3>
@@ -24,6 +21,11 @@ const About = () => {
             effectively self manage during independent projects as well as
             collaborate in a team setting.
           </p>
+          <div className="btn">
+            <a href="/services" className="Link">
+              Go to Services
+            </a>
+          </div>
         </div>
       </section>
     </main>

@@ -117,6 +117,10 @@ $fontfamily: "Inter";
             font-family: $fontfamily;
             font-size: 20px;
             font-weight: 700;
+
+            &:hover{
+                box-shadow: 1px -1px 20px 4px $textcolor2;
+            }
         }
       }
     }
