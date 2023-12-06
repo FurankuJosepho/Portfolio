@@ -10,7 +10,7 @@ const About = () => {
       <section className="dark">
         <div className="Picture2nd">
           <img
-            src="https://github.com/FurankuJosepho/Imports/raw/main/1x1.jpg"
+            src="./assets/1v1 2.jpg"
             alt="Profile"
           />
         </div>

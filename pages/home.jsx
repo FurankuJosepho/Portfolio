@@ -260,7 +260,7 @@ const Home = () => {
         <div className="Picture">
           <div className="Circle2">
             <img
-              src="https://github.com/FurankuJosepho/Imports/raw/main/Abosolute.png"
+              src="./assets/Abosolute.png"
               alt="Profile"
             />
           </div>
