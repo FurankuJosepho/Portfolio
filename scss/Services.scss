@@ -1,0 +1,124 @@
+@import "../scss/Breakpoints2.scss";
+//Defined variables
+$bgcolor: #1e1e1e;
+$textcolor: #d9d9d9;
+$textcolor2: rgba(138, 0, 0, 1);
+$fontfamily: "Inter";
+
+#Services {
+  background-color: $bgcolor;
+  height: max-content;
+  max-height: 1200px;
+
+  .Container {
+    // border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .Boxes {
+      // border: 2px solid red;
+      display: grid;
+      grid-template-columns: repeat(3, 300px);
+      grid-template-rows: repeat(2, 1fr);
+      text-align: center;
+      margin: 40px 0;
+
+      .Box {
+        // border: 2px solid red;
+        background-color: $textcolor;
+        max-height: 400px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        border-radius: 20px;
+
+        .Round {
+          position: absolute;
+          border: 10px solid $bgcolor;
+          border-radius: 50%;
+          background-color: $textcolor;
+          width: 90px;
+          height: 90px;
+          top: -43px;
+          right: 95px;
+          .Prog-Lang {
+            position: relative;
+            top: 9px;
+          }
+          #Bootstrap {
+            position: relative;
+            top: 15px;
+          }
+          #CSS,
+          #HTML {
+            position: relative;
+            top: 12px;
+          }
+          #SCSS {
+            position: relative;
+            top: -1px;
+            right: 3px;
+            width: 50px;
+          }
+        }
+
+        .Details {
+          margin: 50px 20px;
+
+          h1 {
+            font-family: $fontfamily;
+            font-size: 30px;
+            font-weight: 800;
+          }
+
+          p {
+            font-family: $fontfamily;
+            font-size: small;
+          }
+        }
+      }
+    }
+
+    .Title {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      color: $textcolor;
+
+      h1 {
+        font-family: $fontfamily;
+        font-weight: 800;
+        font-size: 50px;
+      }
+      hr {
+        border: 2px solid $textcolor2;
+        width: 130px;
+        opacity: 100%;
+        margin: 0;
+      }
+      
+      .btns {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .Links{
+            padding: 10px;
+            border: 2px solid $textcolor2;
+            margin: 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            color: $textcolor;
+            background-color: $textcolor2;
+            font-family: $fontfamily;
+            font-size: 20px;
+            font-weight: 700;
+        }
+      }
+    }
+  }
+}
