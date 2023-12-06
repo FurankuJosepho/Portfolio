@@ -1,4 +1,5 @@
 @import "../scss/Breakpoints2.scss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
 //Defined variables
 $bgcolor: #1e1e1e;
 $textcolor: #d9d9d9;
@@ -120,6 +121,7 @@ $fontfamily: "Inter";
         }
 
         .Name {
+          text-shadow: 2px -3px 1px $textcolor2;
           font-family: $fontfamily;
           font-size: 60px;
           font-style: normal;

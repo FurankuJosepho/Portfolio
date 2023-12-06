@@ -253,7 +253,7 @@ const Home = () => {
             </div>
           </div>
 
-          <a href="#Abouts" className="Danger">
+          <a href="/abouts" className="Danger">
             Learn More
           </a>
         </div>
