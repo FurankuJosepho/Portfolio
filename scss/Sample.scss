@@ -1,0 +1,85 @@
+@import "../scss/Breakpoints2.scss";
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap");
+//Defined variables
+$bgcolor: #1e1e1e;
+$textcolor: #d9d9d9;
+$textcolor2: rgba(138, 0, 0, 1);
+$fontfamily: "Inter";
+
+#Projects {
+  background-color: $textcolor;
+  max-height: 40rem;
+  height: 37.5rem;
+
+  .Container {
+    // border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+      color: $textcolor;
+      background-color: $bgcolor;
+      border-color: var(--bs-nav-tabs-link-active-border-color);
+    }
+
+    .Titles {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-family: $fontfamily;
+        font-weight: 800;
+        font-size: 50px;
+      }
+      hr {
+        border: 2px solid $textcolor2;
+        width: 130px;
+        opacity: 100%;
+        margin: 0;
+      }
+    }
+
+    .Tab1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      #Mid {
+        margin-top: 3rem;
+      }
+
+      
+      .Card1 {
+        max-height: 50rem;
+        height: 25.5rem;
+        width: 20rem;//make it 14 rem pag 5 na projects
+        border-radius: 10px;
+        margin: 0.5rem;
+        margin-top: -5rem;
+        text-align: center;
+
+        .Card1Body {
+          border-radius: 0px 0 10px 10px;
+          background-color: $bgcolor;
+          color: $textcolor;
+
+          .btns {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 3rem;
+
+            .Red {
+              border: $textcolor2;
+              background-color: $textcolor2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
