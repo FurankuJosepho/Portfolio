@@ -14,9 +14,11 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <Home/>
+      <About/>
       <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/abouts" exact element={<About />} />
+        {/* <Route path="/" exact element={<Home />} />
+        <Route path="/abouts" exact element={<About />} /> */}
         <Route path="/services" exact element={<Services />} />
         <Route path="/projects" exact element={<Sample />} />
       </Routes>
