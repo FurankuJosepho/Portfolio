@@ -89,6 +89,7 @@ $fontfamily: "Inter";
       padding: 10px 0;
       margin-top: 0;
       flex-direction: row;
+      height: 410px;
     }
 
     .Picture2nd {
@@ -98,6 +99,9 @@ $fontfamily: "Inter";
       position: relative;
       @include md {
         top: -50px;
+      }
+      @include lg {
+        top: 0;
       }
 
       img {
@@ -141,7 +145,15 @@ $fontfamily: "Inter";
 
       @include xxs {
         position: relative;
+        top: -px;
+      }
+      @include md {
+        position: relative;
         top: -37px;
+      }
+      @include lg {
+        position: relative;
+        top: 0;
       }
 
       h3 {
@@ -192,7 +204,7 @@ $fontfamily: "Inter";
         }
         @include md {
           width: 445px;
-          font-size: 16px;
+          font-size: 19px;
           line-height: 28px;
         }
         @include lg {
