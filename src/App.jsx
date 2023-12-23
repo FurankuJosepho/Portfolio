@@ -16,10 +16,11 @@ function App() {
       <Navbar />
       <Home/>
       <About/>
+      <Services/>
       <Routes>
         {/* <Route path="/" exact element={<Home />} />
         <Route path="/abouts" exact element={<About />} /> */}
-        <Route path="/services" exact element={<Services />} />
+        {/* <Route path="/services" exact element={<Services />} /> */}
         <Route path="/projects" exact element={<Sample />} />
       </Routes>
       <Footer />
