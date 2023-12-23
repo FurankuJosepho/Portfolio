@@ -7,7 +7,7 @@ $fontfamily: "Inter";
 
 #Abouts {
   background-color: $textcolor;
-  height: 37.5rem;
+  height: 39.5rem;
   color: $bgcolor;
   display: flex;
   justify-content: center;
@@ -18,11 +18,13 @@ $fontfamily: "Inter";
   padding-right: 5px;
 
   @include xxs {
-    max-height: 50rem;
-    height: 38rem;
+    height: 45.5rem;
   }
   @include xs {
-    height: 39rem;
+    height: 45.4rem;
+  }
+  @include md {
+    height: 50rem;
   }
   @include lg {
     height: 38.4rem;
