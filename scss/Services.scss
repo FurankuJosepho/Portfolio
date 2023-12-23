@@ -8,13 +8,35 @@ $fontfamily: "Inter";
 #Services {
   background-color: $bgcolor;
   height: max-content;
-  max-height: 1200px;
+
+  @include xxs {
+    padding: 4rem 0;
+    height: 134rem;
+  }
+  @include md {
+    height: 84.5rem;
+  }
+  @include lg {
+    height: 77rem;
+  }
+  @include xxl {
+    padding: 6rem 0;
+    height: 53rem;
+  }
+
 
   .Container {
     // border: 2px solid red;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    @include xxs {
+      flex-direction: column-reverse;
+    }
+    @include xxl {
+      flex-direction: row;
+    }
 
     .Boxes {
       // border: 2px solid red;
@@ -23,6 +45,23 @@ $fontfamily: "Inter";
       grid-template-rows: repeat(2, 1fr);
       text-align: center;
       margin: 40px 0;
+
+      @include xxs {
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(3, 1fr);
+      }
+      @include md {
+        grid-template-columns: repeat(2, 235px);
+        grid-template-rows: repeat(3, 1fr);
+      }
+      @include lg {
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(3, 1fr);
+      }
+      @include xxl {
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(2, 1fr);
+      }
 
       .Box {
         // border: 2px solid red;
@@ -44,6 +83,17 @@ $fontfamily: "Inter";
           height: 90px;
           top: -43px;
           right: 95px;
+
+          @include md {
+            right: 65px;
+          }
+          @include lg {
+            right: 120px;
+          }
+          @include xxl {
+            right: 95px;
+          }
+
           .Prog-Lang {
             position: relative;
             top: 9px;
@@ -105,6 +155,13 @@ $fontfamily: "Inter";
         display: flex;
         flex-direction: column;
         text-align: center;
+
+        @include xxs {
+          flex-direction: row;
+        }
+        @include xxl {
+          flex-direction: column;
+        }
 
         .Links{
             padding: 10px;

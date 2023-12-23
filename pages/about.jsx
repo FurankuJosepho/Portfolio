@@ -22,7 +22,7 @@ const About = () => {
             collaborate in a team setting.
           </p>
           <div className="btn">
-            <a href="/services" className="Link">
+            <a href="#Services" className="Link">
               Go to Services
             </a>
           </div>
