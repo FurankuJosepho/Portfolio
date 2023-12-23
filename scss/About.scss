@@ -17,6 +17,17 @@ $fontfamily: "Inter";
   padding-left: 5px;
   padding-right: 5px;
 
+  @include xxs {
+    max-height: 50rem;
+    height: 38rem;
+  }
+  @include xs {
+    height: 39rem;
+  }
+  @include lg {
+    height: 38.4rem;
+  }
+
   .Title {
     font-family: $fontfamily;
     margin: 15px;
@@ -29,6 +40,13 @@ $fontfamily: "Inter";
       font-size: 3vw;
       font-weight: 800;
       margin-bottom: 0;
+
+      @include xxs {
+        font-size: 25px;
+      }
+      @include xl {
+        font-size: 2.75rem;
+      }
     }
     hr {
       border: 2px solid $textcolor2;
@@ -46,6 +64,17 @@ $fontfamily: "Inter";
     align-items: center;
     justify-content: center;
     border-radius: 60px;
+
+    @include xxs {
+      margin-top: 3rem;
+      border-radius: 30px;
+      flex-direction: column;
+    }
+    @include lg {
+      margin-top: 0;
+      flex-direction: row;
+    }
+
     .Picture2nd {
       display: flex;
       align-items: center;
@@ -59,6 +88,27 @@ $fontfamily: "Inter";
         border-radius: 50%;
         border: 40px solid $bgcolor;
         margin-right: 4rem;
+
+        @include xxs {
+          border: 20px solid $bgcolor;
+          width: 200px;
+          margin: 0;
+        }
+        @include lg {
+          width: 310px;
+        }
+        @include xl {
+          width: 400px;
+          margin-right: 20px;
+        }
+        @include xxl {
+          position: relative;
+          aspect-ratio: 1;
+          width: 475px;
+          border-radius: 50%;
+          border: 40px solid $bgcolor;
+          margin-right: 4rem;
+        }
       }
     }
 
@@ -74,6 +124,25 @@ $fontfamily: "Inter";
         font-family: $fontfamily;
         font-weight: 800;
         line-height: 80px;
+
+        @include xxs {
+          font-size: 17px;
+          margin-bottom: 0;
+          line-height: 43px;
+        }
+        @include xs {
+          font-size: 20px;
+        }
+        @include sm {
+          font-size: 23px;
+        }
+        @include lg {
+          font-size: 30px;
+          line-height: 55px;
+        }
+        @include xxl {
+          font-size: 1.75rem;
+        }
       }
 
       p {
@@ -81,8 +150,51 @@ $fontfamily: "Inter";
         width: 30rem;
         font-size: 15px;
         line-height: 35px;
+
+        @include xxs {
+          width: 250px;
+          font-size: 11px;
+          line-height: 22.7px;
+          text-align: center;
+        }
+        @include xs {
+          width: 340px;
+          line-height: 26px;
+          font-size: 14px;
+        }
+        @include sm {
+          width: 365px;
+          font-size: 15px;
+        }
+        @include md {
+          width: 445px;
+          font-size: 16px;
+          line-height: 28px;
+        }
+        @include lg {
+          width: 440px;
+          font-size: 18px;
+          line-height: 33px;
+          text-align: start;
+        }
+        @include xxl {
+          font-family: $fontfamily;
+          width: 33rem;
+          font-size: 20px;
+          line-height: 35px;
+        }
       }
       .btn {
+        @include xxs {
+          width: 200px;
+        }
+        @include xs {
+          width: 300px;
+        }
+        @include sm {
+          width: 400px;
+        }
+
         .Link {
           padding: 10px 10rem;
           text-decoration: none;
@@ -92,6 +204,19 @@ $fontfamily: "Inter";
           font-size: 25px;
           font-weight: 700;
           font-family: $fontfamily;
+
+          @include xxs {
+            font-size: 13px;
+            padding: 10px 33px;
+          }
+          @include xs {
+            font-size: 15px;
+            padding: 10px 83px;
+          }
+          @include sm {
+            font-size: 18px;
+            padding: 10px 120px;
+          }
         }
       }
     }
