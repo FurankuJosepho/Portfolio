@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // Routers for every pages
 import Home from "../pages/home";
@@ -12,19 +11,14 @@ import Footer from "../components/Footer";
 
 function App() {
   return (
-    <Router>
+    <main>
       <Navbar />
       <Home/>
       <About/>
       <Services/>
-      <Routes>
-        {/* <Route path="/" exact element={<Home />} />
-        <Route path="/abouts" exact element={<About />} /> */}
-        {/* <Route path="/services" exact element={<Services />} /> */}
-        <Route path="/projects" exact element={<Sample />} />
-      </Routes>
+      <Sample/>
       <Footer />
-    </Router>
+    </main>
   );
 }
 

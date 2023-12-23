@@ -261,7 +261,7 @@ const Services = () => {
           <hr />
 
           <div className="btns">
-            <a href="/projects" className="Links">View My Works!</a>
+            <a href="#Projects" className="Links">View My Works!</a>
             <a href="./assets/Resume.pdf" target="_blank" className="Links">View My Resume!</a>
           </div>
         </div>

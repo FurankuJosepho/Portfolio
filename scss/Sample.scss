@@ -8,8 +8,18 @@ $fontfamily: "Inter";
 
 #Projects {
   background-color: $textcolor;
-  max-height: 40rem;
   height: 37.5rem;
+
+  @include xxs {
+    padding: 5rem 0;
+    height: 95rem;
+  }
+  @include lg {
+    height: 70rem;
+  }
+  @include breakpoints(1064px){
+    height: 45rem;
+  }
 
   .Container {
     // border: 2px solid red;
@@ -51,6 +61,13 @@ $fontfamily: "Inter";
 
       #Mid {
         margin-top: 3rem;
+
+        @include xxs {
+          margin-top: 1rem;
+        }
+        @include breakpoints(1064px){
+          margin-top: 3rem;
+        }
       }
 
       
@@ -62,6 +79,17 @@ $fontfamily: "Inter";
         margin: 0.5rem;
         margin-top: -5rem;
         text-align: center;
+
+        @include xxs {
+          margin-top: 1rem;
+          width: 17rem;
+        }
+        @include sm {
+          width: 23rem;
+        }
+        @include md {
+          width: 20rem;
+        }
 
         .Card1Body {
           border-radius: 0px 0 10px 10px;
