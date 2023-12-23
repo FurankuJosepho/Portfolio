@@ -23,11 +23,20 @@ $fontfamily: "Inter";
   @include xs {
     height: 45.4rem;
   }
+  @include sm {
+    height: 51.9rem;
+  }
   @include md {
-    height: 50rem;
+    height: 53rem;
   }
   @include lg {
-    height: 38.4rem;
+    height: 31.4rem;
+  }
+  @include xl {
+    height: 35.5rem;
+  }
+  @include xxl {
+    height: 39.5rem;
   }
 
   .Title {
