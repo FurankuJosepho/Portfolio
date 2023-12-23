@@ -31,7 +31,7 @@ $fontfamily: "Inter";
     align-items: flex-start;
   }
   @include md {
-    height: 59.8rem;
+    height: 60rem;
   }
   @include lg {
     padding-top: 0;
@@ -97,6 +97,7 @@ $fontfamily: "Inter";
       }
       @include md {
         max-width: 480px;
+        margin-top: 4rem;
       }
       @include xl {
         max-width: 992px;
