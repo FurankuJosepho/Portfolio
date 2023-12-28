@@ -1,6 +1,48 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 //scss import
 import "../scss/contact.scss";
+
+//import needed
+import emailjs from '@emailjs/browser';
+import { useRef, useState } from 'react';
+import Swal from "sweetalert2";
+
 const contact = () => {
+    const [subject, setSubject] = useState();
+    const [email, setEmail] = useState();
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_dx6thee', 'template_ac5jgjx', form.current, 'Os9PMSYhQwUcxL2FQ')
+    .then((result) => {
+      console.log(result.text);
+
+      if (subject.trim() === '' || email.trim() === '') {
+        Swal.fire({
+          title: "Error!",
+          text: "Subject and Email cannot be empty",
+          icon: "error"
+        });
+      } else {
+        Swal.fire({
+          title: "Thank You!",
+          text: "Your message has been submitted",
+          icon: "success"
+        }).then(() => {
+            setSubject('');
+            setEmail('');
+            form.current.reset();
+          });
+      }
+    })
+    .catch((error) => {
+      console.log(error.text);
+    });
+
+  };
+
   return (
     <section id="Contact">
       <div className="container">
@@ -32,25 +74,24 @@ const contact = () => {
                 </div>
         </div>
         <div className="rightSide">
-            <div className="wrapper">
+            <form className="wrapper" ref={form} onSubmit={sendEmail}>
                 <div className="title">
                     <h3>Message Me Here!</h3>
                     <hr />
-
                 </div>
                 <div className="inputBox">
-                    <input type="text" name="Fullname" id="Fullname" required/>
+                    <input type="text" name="Subject" id="Fullname" value={subject} onChange={(e) => setSubject(e.target.value)} required/>
                     <label htmlFor="Fullname">Fullname</label>
                 </div>
                 <div className="inputBox">
-                    <input type="email" name="Email" id="Email" required/>
+                    <input type="email" name="Email" id="Email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
                     <label htmlFor="Email">Email</label>
                 </div>
                 <div className="textBox">
-                    <textarea name="Message" id="" cols="30" rows="10">Your Message Here...</textarea>
+                    <textarea name="message" id="" cols="30" rows="10">Your Message Here...</textarea>
                 </div>
-                <button>Send</button>
-            </div>
+                <button type="submit" value="Send">Send</button>
+            </form>
         </div>
       </div>
     </section>
