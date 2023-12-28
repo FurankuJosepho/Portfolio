@@ -1,0 +1,185 @@
+@import "../scss/Breakpoints2.scss";
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap");
+//Defined variables
+$bgcolor: #1e1e1e;
+$textcolor: #d9d9d9;
+$textcolor2: rgba(138, 0, 0, 1);
+$fontfamily: "Inter";
+
+#Contact {
+  background-color: $bgcolor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42.4rem;
+  max-width: 1440px;
+  padding: 40px;
+  overflow-x: hidden;
+
+  .container {
+    // border: solid 2px red;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .leftSide {
+      // border: 2px solid red;
+      margin: 15px;
+      width: 450px;
+      color: $textcolor;
+
+      .socialMedia {
+        margin: 30px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .circles {
+          svg {
+            background-color: $textcolor;
+            margin: 0 15px;
+            border-radius: 50%;
+            padding: 6px;
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+
+      h1 {
+        font-size: 50px;
+        font-family: $fontfamily;
+        font-weight: 800;
+        margin-bottom: 0;
+      }
+
+      hr {
+        border: 2px solid rgb(138, 0, 0);
+        width: 200px;
+        opacity: 100%;
+        margin: 0px 40px;
+      }
+
+      p {
+        font-size: 30px;
+        font-family: $fontfamily;
+        font-style: normal;
+        font-weight: 800;
+        margin-bottom: 0;
+        margin: 10px 0;
+      }
+    }
+
+    .rightSide {
+      // border: 2px solid red;
+      margin: 15px;
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        border-radius: 10px;
+        background-color: $textcolor;
+        position: relative;
+
+        .title {
+          margin: 10px 0;
+          h3 {
+            margin: 5px 25px;
+            font-family: $fontfamily;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 800;
+          }
+
+          hr {
+            border: 2px solid rgb(138, 0, 0);
+            width: 200px;
+            opacity: 100%;
+            margin: 0px 33px;
+          }
+        }
+
+        .inputBox {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+
+          :nth-child(2) {
+            position: absolute;
+            font-size: 20px;
+            top: 15px;
+            left: 30px;
+            color: $textcolor;
+            transition: 0.3s ease-in;
+          }
+
+          :nth-child(1) {
+            background-color: $bgcolor;
+            color: $textcolor;
+            font-size: 15px;
+            height: 50px;
+            border: none;
+            margin: 8px 15px;
+            padding: 10px;
+            border-radius: 5px;
+
+            &:focus {
+              background-color: $textcolor;
+              color: $bgcolor;
+            }
+
+            &:valid + label {
+              top: -7px;
+              color: green;
+              font-weight: 700;
+              font-size: 15px;
+              background-color: $bgcolor;
+              padding: 0 10px;
+              border-radius: 10px;
+            }
+
+            &:focus + label {
+              top: -7px;
+              color: $bgcolor;
+              font-weight: 700;
+              font-size: 15px;
+              background-color: $textcolor;
+              padding: 0 10px;
+            }
+          }
+        }
+
+        .textBox {
+          display: flex;
+          flex-direction: column;
+
+          :nth-child(1) {
+            display: flex;
+            background-color: $bgcolor;
+            color: $textcolor;
+            font-size: 15px;
+            height: 15rem;
+            border: none;
+            margin: 8px 15px;
+            border-radius: 5px;
+            font-family: $fontfamily;
+            font-size: 1.25rem;
+            resize: none;
+            padding: 13px;
+          }
+        }
+
+        button {
+          padding: 10px;
+          background-color: $textcolor2;
+          color: $textcolor;
+          border-radius: 10px;
+          border: none;
+          margin: 5px;
+        }
+      }
+    }
+  }
+}

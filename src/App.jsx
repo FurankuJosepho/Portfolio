@@ -4,6 +4,7 @@ import Home from "../pages/home";
 import About from "../pages/about";
 import Services from "../pages/services";
 import Sample from "../pages/Sample";
+import Contact from "../pages/contact";
 
 // Routers for every Componenets
 import Navbar from "../components/Navbar";
@@ -17,6 +18,7 @@ function App() {
       <About/>
       <Services/>
       <Sample/>
+      <Contact/>
       <Footer />
     </main>
   );
