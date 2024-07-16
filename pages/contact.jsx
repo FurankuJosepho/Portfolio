@@ -15,11 +15,11 @@ const contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_dx6thee', 'template_ac5jgjx', form.current, 'Os9PMSYhQwUcxL2FQ')
+    emailjs.sendForm('service_dx6thee', 'template_ac5jgjx', form.current, '6_Ips9thOmSBSuhu9')
     .then((result) => {
       console.log(result.text);
 
-      if (subject.trim() === '' || email.trim() === '') {
+      if (subject === '' || email === '') {
         Swal.fire({
           title: "Error!",
           text: "Subject and Email cannot be empty",
